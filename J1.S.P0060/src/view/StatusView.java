@@ -16,6 +16,7 @@ public class StatusView {
 
     public void printStatusView(UserWallet wallet, ArrayList<Integer> billList) {
         UserBill bill = new UserBill();
+        // Kiểm tra tiền trong wallet có đủ không 
         if (wallet.getWallet() >= bill.getTotalBill(billList)) {
             System.out.printf("this is total of bill:%d\nYou can buy it.\n", bill.getTotalBill(billList));
 

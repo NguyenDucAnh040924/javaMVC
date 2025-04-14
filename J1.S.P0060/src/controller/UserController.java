@@ -36,7 +36,7 @@ public class UserController {
         sc.nextLine();
     }
     
-    
+    // in ra trạng thái khả năng mua
     public void displayAll(){
         StatusView st = new StatusView();
         st.printStatusView(wa, (ArrayList<Integer>) billList);
